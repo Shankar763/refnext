@@ -14,7 +14,7 @@ const ReferralSystem: React.FC<ReferralSystemProps> = ({ initData, userId, start
 
   useEffect(() => {
     const checkReferral = async () => {
-      if (startParam && userId) {
+      if (userId) {
         try {
           const response = await fetch('/api/referrals', {
             method: 'POST',
