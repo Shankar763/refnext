@@ -15,7 +15,7 @@ export default function Home() {
         WebApp.ready();
         setInitData(WebApp.initData);
         setUserId(WebApp.initDataUnsafe.user?.id.toString() || '');
-        setStartParam(WebApp.initDataUnsafe.start_param || '');
+        setStartParam(WebApp.initDataUnsafe.start_param || 'hello param');
       }
     };
 
